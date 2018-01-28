@@ -2,9 +2,9 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/parent_layout"
     tools:context="com.udacity.myapplication.MainActivity">
 
     <TextView
@@ -14,129 +14,110 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:background="@drawable/code_black_white"
         android:fontFamily="sans-serif"
-        android:text="Imagine your future!"
-        android:textColor="#ECEFF1"
-        android:textSize="35sp"
         android:gravity="center"
-        android:textStyle="bold"
-        android:background="@drawable/code_black_white"/>
+        android:text="@string/header_text"
+        android:textColor="@color/picture_text"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/first_question_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/future_text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif"
-        android:text="What do you want to learn today? \n What's your dream job?"
-        android:textColor="#01579B"
-        android:textStyle="italic"
-        android:textSize="20sp" />
+        android:gravity="center"
+        android:text="@string/headline_text"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        android:textStyle="italic" />
 
     <ImageView
         android:id="@+id/engineers"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:scaleType="fitXY"
+        android:layout_height="250dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@id/first_question_text"
         android:layout_marginTop="25dp"
+        android:scaleType="fitXY"
         android:src="@drawable/engineers" />
 
     <TextView
         android:layout_width="125dp"
         android:layout_height="100dp"
-        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_above="@+id/linearLayout"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="161dp"
         android:background="@drawable/code_black_white"
         android:gravity="center"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="Discover the program that's right for you!"
-        android:textColor="#ECEFF1"
+        android:text="@string/small_pic_text"
+        android:textColor="@color/picture_text"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/udacity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/udacity"
-            android:textColor="#01579B"
+            android:textColor="@color/text"
             android:textSize="35sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/street_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/udacity"
-            android:layout_marginTop="3dp"
-            android:layout_weight="1"
+            android:layout_weight="0"
             android:gravity="center"
-            android:text="2465 Latham St"
-            android:textColor="#2962FF"
+            android:text="@string/street_address"
+            android:textColor="@color/address_color"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/street_address"
-            android:layout_weight="1"
+            android:layout_weight="0"
             android:gravity="center"
-            android:text="Mountain View, CA 94043"
-            android:textColor="#2962FF"
+            android:text="@string/city"
+            android:textColor="@color/address_color"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/phone_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/city"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="650-555-5555"
             android:linksClickable="true"
-            android:textColor="#2962FF"
+            android:text="@string/phone_number"
+            android:textColor="@color/address_color"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/phone_number"
             android:layout_weight="1"
             android:autoLink="web"
             android:gravity="center"
             android:linksClickable="true"
-            android:text="www.udacity.com"
-            android:textColorLink="#2962FF"
+            android:text="@string/website"
+            android:textColorLink="@color/address_color"
             android:textSize="20sp" />
-
     </LinearLayout>
-
-
-
-
-
-
 
 </RelativeLayout>
