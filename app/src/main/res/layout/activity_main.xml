@@ -119,13 +119,6 @@
             android:text="@string/website"
             android:textColorLink="@color/address_color"
             android:textSize="20sp" />
-
     </LinearLayout>
-
-
-
-
-
-
 
 </RelativeLayout>
