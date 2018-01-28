@@ -40,7 +40,7 @@
     <ImageView
         android:id="@+id/engineers"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@id/first_question_text"
@@ -51,10 +51,9 @@
     <TextView
         android:layout_width="125dp"
         android:layout_height="100dp"
-        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_above="@+id/linearLayout"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="161dp"
         android:background="@drawable/code_black_white"
         android:gravity="center"
         android:paddingLeft="10dp"
@@ -67,7 +66,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
